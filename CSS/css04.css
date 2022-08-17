@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    font-size: 20px;
+    border: solid 1px;
+    width: 100%;
+}
+
+thead {
+    color: #ffffff;
+    background-color: #db8996;
+}
+
+.a {
+    background-color: #e4e1e1;
+}
+
+.b {
+    background-color: #d5bdbd;
+}

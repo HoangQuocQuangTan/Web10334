@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính tuổi</title>
+</head>
+
+<body>
+    <b>
+        <h1>Chương trình tính tuổi</h1>
+    </b>
+    <table border="1">
+        <tr>
+            <td>Nhập vào tên bạn: </td>
+            <script>
+                var Ten;
+                Ten = prompt("Nhập vào tên của bạn");
+            </script>
+            <td>
+                <script>
+                    document.write(Ten);
+                </script>
+            </td>
+        </tr>
+        <tr>
+            <td>Nhập vào năm sinh: </td>
+            <script>
+                var Tuoi;
+                Tuoi = prompt("Nhập vào năm sinh của bạn");
+            </script>
+            <td>
+                <script>
+                    document.write(Tuoi)
+                </script>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <input id="btn" type="button" name=TinhTuoi value="Tính tuổi">
+    <p id="TinhTuoi"></p>
+    <script>
+        const BTN=document.getElementById("btn")
+        const TT=document.getElementById("TinhTuoi")
+        let currentime = new Date()
+        let year=currentime.getFullYear()
+        BTN.addEventListener("click",function(){
+            TT.textContent+= "Chào bạn "+ Ten +", Tuổi của bạn là: "+ (year-Tuoi)
+        })
+    </script>
+</body>
+</html>
